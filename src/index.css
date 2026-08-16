@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  
+  --color-ivory: #F7F4EF;
+  --color-cream: #EEE8DF;
+  --color-cream-light: #FAF8F5;
+  --color-beige: #D8C9B8;
+  --color-beige-light: #E8DFD5;
+  --color-gold: #B49A7A;
+  --color-gold-light: #C8B398;
+  --color-gold-dark: #9A8060;
+  --color-espresso: #2A211D;
+  --color-espresso-dark: #1E1714;
+  --color-taupe: #8D8176;
+  --color-taupe-light: #AFA398;
+}
+
+:root {
+  --ivory: #F7F4EF;
+  --espresso: #2A211D;
+  --gold: #B49A7A;
+  --cream: #EEE8DF;
+  --taupe: #8D8176;
+  --beige: #D8C9B8;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-ivory);
+    color: var(--color-espresso);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Natural Tones styling helpers */
+.natural-card {
+  background: #FFFFFF;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(42, 33, 29, 0.05);
+  border: 1px solid rgba(216, 201, 184, 0.35);
+}
+
+.natural-card-warm {
+  background: #FAF8F5;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(42, 33, 29, 0.04);
+  border: 1px solid rgba(216, 201, 184, 0.4);
+}
+
+.natural-icon-box {
+  width: 42px;
+  height: 42px;
+  background: #EEE8DF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #B49A7A;
+}
+
+.natural-btn-primary {
+  background: #2A211D;
+  color: #F7F4EF;
+  padding: 12px 28px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.natural-btn-primary:hover {
+  background: #B49A7A;
+  color: #FFFFFF;
+}
+
+.natural-btn-gold {
+  background: #B49A7A;
+  color: #FFFFFF;
+  padding: 12px 28px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.natural-btn-gold:hover {
+  background: #9A8060;
+  color: #FFFFFF;
+}
+
+.natural-eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #B49A7A;
+  font-weight: 600;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F4EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8C9B8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B49A7A;
+}
+

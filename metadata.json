@@ -1,0 +1,6 @@
+{
+  "name": "LEGEND UNISEX SALON",
+  "description": "Premium unisex salon in DLF Phase 3, Gurugram offering luxury hair styling, coloring, keratin treatments, and personalized beauty experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
