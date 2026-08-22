@@ -71,7 +71,7 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenBooking }) => {
           </div>
           <span>4.9 / 5.0 Google Rating</span>
           <span>·</span>
-          <span>1,595+ Verified Reviews in Gurugram</span>
+          <span>1,048+ Verified Reviews in Gurugram</span>
         </div>
 
       </div>
