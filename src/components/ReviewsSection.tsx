@@ -181,7 +181,7 @@ export const ReviewsSection: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white hover:bg-[#FAF8F5] text-[#2A211D] border border-[#D8C9B8] px-6 py-3 rounded-full text-xs font-semibold uppercase tracking-[1px] shadow-sm hover:shadow-md transition-all"
           >
-            <span>View All 1,595+ Reviews on Google Maps</span>
+            <span>View All 1,048+ Reviews on Google Maps</span>
             <ExternalLink className="w-3.5 h-3.5 text-[#B49A7A]" />
           </a>
         </div>
