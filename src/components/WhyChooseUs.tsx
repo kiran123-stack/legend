@@ -94,7 +94,7 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ onOpenBooking }) => {
 
   const stats = [
     { value: '8+ Years', label: 'Established in 2016 in DLF Phase 3' },
-    { value: '4.9 ★', label: '1,595+ Verified Google Reviews' },
+    { value: `${BUSINESS_INFO.googleRating} ★`, label: `${BUSINESS_INFO.totalReviews.toLocaleString()}+ Verified Google Reviews` },
     { value: '100%', label: 'Bond-Safe & Gentle Formulations' },
     { value: '15+', label: 'Master Certified Stylists' },
   ];
