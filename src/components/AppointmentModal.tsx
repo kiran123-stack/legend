@@ -396,7 +396,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
                   <div className="flex justify-between">
                     <span className="text-[#8D8176]">Salon Location:</span>
                     <span className="font-medium text-right">
-                      DLF Phase 3, Gurugram
+                      Road No. 16, U Block, DLF Phase 3
                     </span>
                   </div>
 
