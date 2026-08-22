@@ -118,7 +118,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#B49A7A] flex-shrink-0 mt-0.5" />
                 <span className="leading-snug">
-                  SHOP No. L 1-2, PINK TOWN, U-25 Rd, U Block, DLF Phase 3, Sector 24, Gurugram, Haryana 122002
+                  {BUSINESS_INFO.address}
                 </span>
               </div>
 
@@ -131,7 +131,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
 
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-[#B49A7A] flex-shrink-0" />
-                <span>{BUSINESS_INFO.openingHours}</span>
+               <span>{BUSINESS_INFO.openingHours} ({BUSINESS_INFO.closingTime})</span>
               </div>
             </div>
 
@@ -147,9 +147,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8D8176]">
-          <p>© 2026 Legend Unisex Salon. All rights reserved.</p>
+          <p>© 2026 Legend Unisex Salon · Road No. 16, DLF Phase 3, Gurugram. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <span>DLF Phase 3, Gurugram</span>
+            <a href={BUSINESS_INFO.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:text-[#F7F4EF] transition-colors">
+              Instagram
+            </a>
             <button
               onClick={scrollToTop}
               className="inline-flex items-center gap-1 text-[#D8C9B8] hover:text-[#F7F4EF] transition-colors cursor-pointer"
