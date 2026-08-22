@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Clock, Navigation, Sparkles, Calendar, Coffee, Wifi, Car, ShieldCheck } from 'lucide-react';
+import { MapPin, Phone, Clock, Navigation, Sparkles, Calendar, Coffee, Wifi, Car, ShieldCheck, Instagram } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/salonData';
 
 interface LocationSectionProps {
@@ -27,7 +27,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
             </h2>
 
             <p className="text-[#8D8176] text-base sm:text-lg font-light leading-relaxed mb-8 max-w-xl">
-              Conveniently situated in DLF Phase 3, Gurugram. An unhurried oasis designed for your comfort, privacy, and style.
+              Conveniently situated on Road No. 16, U Block, DLF Phase 3, Gurugram. An unhurried oasis designed for your comfort, privacy, and style.
             </p>
 
             {/* Address & Contact Cards */}
@@ -46,7 +46,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
                     {BUSINESS_INFO.address}
                   </p>
                   <p className="text-xs text-[#9A8060] mt-1 font-medium">
-                    DLF Phase 3 · Near Cyber City Corridor, Gurugram
+                    Road No. 16 · U Block · DLF Phase 3, Sector 24, Gurugram
                   </p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
                   SALON ESSENTIALS
                 </span>
                 <span className="px-3 py-1 rounded-full bg-white/10 text-[11px] text-[#D8C9B8]">
-                  Gurugram
+                  Road No. 16, Gurugram
                 </span>
               </div>
 
@@ -175,8 +175,8 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ onOpenBooking 
             <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
               <div className="flex items-center justify-between">
                 <div>
-                  <h4 className="text-sm font-semibold text-[#F7F4EF]">Pink Town, DLF Phase 3</h4>
-                  <p className="text-xs text-[#D8C9B8]/70">Near U-Block & Sector 24</p>
+                  <h4 className="text-sm font-semibold text-[#F7F4EF]">U Block, DLF Phase 3</h4>
+                  <p className="text-xs text-[#D8C9B8]/70">Road No. 16 · Sector 24</p>
                 </div>
                 <a
                   href={BUSINESS_INFO.googleMapsUrl}
