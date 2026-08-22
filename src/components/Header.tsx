@@ -43,7 +43,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
     { label: 'Home', href: '#hero', id: 'hero' },
     { label: 'Services', href: '#services', id: 'services' },
     { label: 'Experience', href: '#experience', id: 'experience' },
-    { label: 'Why Us', href: '#why-choose-us', id: 'why-choose-us' },
     { label: 'About', href: '#about', id: 'about' },
     { label: 'Gallery', href: '#gallery', id: 'gallery' },
     { label: 'Reviews', href: '#reviews', id: 'reviews' },
@@ -223,7 +222,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenBooking }) => {
 
             <div className="text-center pt-2">
               <span className="text-[11px] text-[#D8C9B8]/70">
-                DLF Phase 3, Sector 24, Gurugram · ★ 4.9 (1,595+ Reviews)
+                 DLF Phase 3, Sector 24, Gurugram · ★ {BUSINESS_INFO.googleRating} ({BUSINESS_INFO.totalReviews.toLocaleString()}+ Reviews)
               </span>
             </div>
           </div>
