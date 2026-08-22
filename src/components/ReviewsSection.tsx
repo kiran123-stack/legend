@@ -6,7 +6,7 @@ export const ReviewsSection: React.FC = () => {
   const [selectedFilter, setSelectedFilter] = useState<string>('all');
 
   const filterCategories = [
-    { id: 'all', label: 'All Reviews (1,595+)' },
+    { id: 'all', label: 'All Reviews (1,048)' },
     { id: 'colour', label: 'Balayage & Colour' },
     { id: 'haircut', label: 'Precision Haircuts' },
     { id: 'keratin', label: 'Keratin & Hair Spa' },
