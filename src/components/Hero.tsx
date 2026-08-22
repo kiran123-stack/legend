@@ -103,7 +103,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <span className="font-bold text-[#F7F4EF]">4.9</span>
           <span className="text-[#D8C9B8]/70">/ 5</span>
           <span className="text-[#D8C9B8]/50">·</span>
-          <span className="text-[#D8C9B8] text-xs font-medium uppercase tracking-wider">1,595+ Google Reviews</span>
+          <span className="text-[#D8C9B8] text-xs font-medium uppercase tracking-wider">1,048+ Google Reviews</span>
         </a>
       </div>
     </section>
