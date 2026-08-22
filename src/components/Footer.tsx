@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MapPin, Clock, ArrowUp, Sparkles } from 'lucide-react';
+import { Phone, MapPin, Clock, ArrowUp, Instagram } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/salonData';
 
 interface FooterProps {
@@ -31,11 +31,23 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
             </span>
 
             <p className="text-sm text-[#D8C9B8]/80 font-light leading-relaxed mb-6 max-w-sm">
-              A luxury unisex hair salon in DLF Phase 3, Gurugram. Dedicated to precision cutting, modern balayage coloring, restorative keratin treatments, and attentive customer experiences.
+              A luxury unisex salon located on Road No. 16, U Block, DLF Phase 3, Gurugram. Offering precision haircutting, seamless balayage, acrylic nails, skincare, and bridal makeovers.
             </p>
+                        
+            <div className="flex flex-wrap items-center gap-3">
 
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-[#B49A7A]">
-              <span>★ 4.9 Rating (1,595+ Google Reviews)</span>
+              <span>★ {BUSINESS_INFO.googleRating} Rating ({BUSINESS_INFO.totalReviews}+ Google Reviews)</span>
+               </div>
+              <a
+                href={BUSINESS_INFO.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 text-xs text-[#F7F4EF] hover:text-[#B49A7A] transition-colors"
+              >
+                <Instagram className="w-3.5 h-3.5 text-[#B49A7A]" />
+                <span>{BUSINESS_INFO.instagramHandle}</span>
+              </a>
             </div>
           </div>
 
